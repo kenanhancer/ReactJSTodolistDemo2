@@ -1,13 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const Delete = ({active, onClick }) => (
-    <button onClick={onClick} disabled={active}> Delete</button>
-)
+const Delete = ({ disabled, onClick }) => (
+    <button onClick={onClick} disabled={disabled} > Delete</button>
+);
 
 Delete.propTypes = {
-    active: PropTypes.bool.isRequired,
+    disabled: PropTypes.bool.isRequired,
     onClick: PropTypes.func.isRequired
-}
+};
 
 export default Delete;

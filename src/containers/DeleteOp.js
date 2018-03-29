@@ -1,16 +1,16 @@
-import { connect } from 'react-redux'
-import { deleteItems } from '../logic/todos'
-import Delete from '../components/DeleteButton'
+import { connect } from 'react-redux';
+import { deleteItems } from '../logic/todos';
+import Delete from '../components/DeleteButton';
 
 const mapStateToProps = (state, ownProps) => ({
-    active: !state.todos.items.some(element=>element.checked)
-})
+    disabled: !state.todos.items.some(element => element.checked)
+});
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
     onClick: () => dispatch(deleteItems())
-})
+});
 
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(Delete)
+)(Delete);

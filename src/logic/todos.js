@@ -24,11 +24,10 @@ export const initialState = {
         { id: 1, content: 'Call mum', completed: false, checked: false },
         { id: 2, content: 'Buy cat food', completed: false, checked: false },
         { id: 3, content: 'Water the plants', completed: false, checked: false },
-    ],
+    ]
 };
 
 const reducer = (state = initialState, action) => {
-    console.log('reducer todos');
     switch (action.type) {
         case ADD_ITEM:
             const nextId =
@@ -37,7 +36,7 @@ const reducer = (state = initialState, action) => {
                 id: nextId,
                 content: action.content,
                 completed: false,
-                checked:false
+                checked: false
             };
 
             return {
@@ -68,7 +67,7 @@ const reducer = (state = initialState, action) => {
             }
         case DELETE_ITEM:
             const items = state.items.filter(item => !item.checked);
-            return {...state,items: items}
+            return { ...state, items: items }
         default:
             return state;
     }
