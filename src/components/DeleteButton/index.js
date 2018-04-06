@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Delete = ({ disabled, onClick }) => (
-    <button onClick={onClick} disabled={disabled} > Delete</button>
+    <button onClick={onClick} disabled={disabled} >Delete</button>
 );
 
 Delete.propTypes = {
