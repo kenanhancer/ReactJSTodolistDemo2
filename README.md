@@ -22,3 +22,8 @@ And run the tests (in watch mode) with:
 ```
 npm test
 ```
+
+## Starting Docker Container
+```
+docker run --rm -it -p 8081:3000 reactjstodolistdemo2-master
+```

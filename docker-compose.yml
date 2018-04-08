@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  reactjstodolistdemo2:
+    image: reactjstodolistdemo2
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
