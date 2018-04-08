@@ -24,6 +24,9 @@ npm test
 ```
 
 ## Starting Docker Container
+
+You can watch ReactJSTodoListWithDockerVideo.mov video to see detaily.
+
 ```
 docker run --rm -it -p 8081:3000 reactjstodolistdemo2-master
 ```
