@@ -27,6 +27,10 @@ export const initialState = {
     ]
 };
 
+// for(let i = 4; i<2350; i++){
+//     initialState.items.push({ id: i, content: 'Todo ' + i, completed: false, checked: false })
+// }
+
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_ITEM:

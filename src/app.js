@@ -7,6 +7,15 @@ import ItemCreator from './components/ItemCreator';
 import VisibleItemsList from './containers/VisibleItemsList'
 import Footer from './components/Footer'
 import './app.css';
+import axios from 'axios';
+
+axios.request({
+  url: "http://localhost:8080/membership/post",
+  method: 'get',
+  timeout: 10000,
+  headers: { 'X-Application-Name': 'haskee' },
+}).then(resp=>console.log("KENAN RESP:", resp))
+.catch(error=>console.log('ERROR', error));
 
 const store = configureStore();
 
